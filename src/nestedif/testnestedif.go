@@ -3,7 +3,7 @@ package main
 import ("fmt")
 
 func main(){
-	var point = 8
+	var point = 3
 	if point > 7 {
 		switch point {
 		case 10:
