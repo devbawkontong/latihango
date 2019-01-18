@@ -5,10 +5,19 @@ import (
 	"strings"
 )
 
-var x = "Hello World"
+
+var x string = "Hello World"
 
 func ff(){
 	fmt.Println(x)
+}
+
+func scan(){
+	fmt.Print("Enter a number: ")
+	var input float64
+	fmt.Scanf("%f", &input)
+	output := input * 2
+	fmt.Println(output)
 }
 
 func main(){
@@ -17,4 +26,9 @@ func main(){
 	fmt.Scanln(&input)
 
 	fmt.Println(strings.Contains("test", "e"))
+
+	m := "latihan"
+	fmt.Println(len(m))
+
+	scan()
 }
