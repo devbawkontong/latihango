@@ -27,7 +27,7 @@ func main(){
 
 	fmt.Println(strings.Contains("test", "e"))
 
-	m := "latihan"
+	m := "latihango"
 	fmt.Println(len(m))
 
 	scan()
