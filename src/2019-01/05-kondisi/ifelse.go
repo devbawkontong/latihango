@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"2019-01/05-kondisi/latihan"
+)
 
 func main(){
 	var point = 9
@@ -13,4 +16,8 @@ func main(){
 	} else {
 		fmt.Printf("tidak lulus. nilai anda %d\n", point)
 	}
+
+	fmt.Println()
+
+	latihan.Show()
 }
