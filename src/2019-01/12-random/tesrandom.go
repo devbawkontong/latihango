@@ -7,6 +7,6 @@ import (
 )
 
 func main(){
-	fmt.Println("my favorite number :", rand.Intn(20))
+	fmt.Println("my favorite number :", rand.Intn(2000))
 	fmt.Println("Now you have ", math.Sqrt(7), " problem")
 }

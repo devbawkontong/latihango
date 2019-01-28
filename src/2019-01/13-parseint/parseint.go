@@ -14,6 +14,7 @@ func main(){
 	text, _ := reader.ReadString('\n')
 
 	var point, _ = strconv.ParseInt(strings.TrimSpace(text), 10, 0)
+	//var point, _ = strconv.ParseInt(text, 10, 0) //tanpa strings, nilainya menjadi nol
 	fmt.Printf("point is %d\n",point)
 
 	switch point {
