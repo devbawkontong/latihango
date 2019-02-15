@@ -9,4 +9,13 @@ func main() {
 	fmt.Println(dst)
 	fmt.Println(src)
 	fmt.Println(n)
+
+	fmt.Println("-----------------")
+
+	dst = []string{"potato", "potato", "potato"}
+	src = []string{"watermelon", "pinnaple"}
+	n = copy(dst, src)
+	fmt.Println(dst)
+	fmt.Println(src)
+	fmt.Println(n)
 }
