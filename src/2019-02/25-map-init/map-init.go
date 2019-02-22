@@ -8,7 +8,7 @@ func main() {
 		2: "Dognout",
 		3: "Pizza",
 	}
-	fmt.Println(junkfood[3])
+	fmt.Println(junkfood[2])
 
 	var drink = make(map[int]string)
 	drink[1] = "coca cola"
