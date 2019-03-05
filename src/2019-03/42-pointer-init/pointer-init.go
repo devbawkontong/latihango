@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var numA int = 4
-	var numB *int = &numA
+	var numA int
+	numA = 4
+	var numB *int
+	numB = &numA
 
 	fmt.Println("numA value :", numA)
 	fmt.Println("numA addr :", &numA)
