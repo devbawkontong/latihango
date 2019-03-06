@@ -3,7 +3,7 @@ package library
 import "fmt"
 
 /*
-type Student = struct {
+type Student struct {
 	Name string
 	Age  int
 }
