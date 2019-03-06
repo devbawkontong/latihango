@@ -15,4 +15,8 @@ func main() {
 	fmt.Println("nama  :", st.nama)
 	st.grade = 7
 	fmt.Println("grade :", st.grade)
+
+	var st2 = student{nama: "test"}
+	fmt.Println("nama  :", st2.nama)
+	fmt.Println("grade  :", st2.grade)
 }
