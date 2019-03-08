@@ -2,30 +2,36 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
-
 var x string = "Hello World"
 
-func ff(){
+func ff() {
 	fmt.Println(x)
 }
 
-func scan(){
+func scan() {
 	fmt.Print("Enter a number: ")
-	var input float64
-	fmt.Scanf("%f", &input)
-	output := input * 2
-	fmt.Println(output)
+	var inputStr string
+	fmt.Scanf("%s", &inputStr)
+	fmt.Println("nilai string:", inputStr)
+	if inputf, err := strconv.ParseFloat(inputStr, 10); err != nil {
+		fmt.Println(inputf)
+		fmt.Println("error not number")
+	} else {
+		output := inputf * 2
+		fmt.Println(output)
+	}
 }
 
-func main(){
+func main() {
 	ff()
 	var input string
 	fmt.Scanln(&input)
 
-	fmt.Println(strings.Contains("test", "e"))
+	fmt.Println(strings.Contains(input, "e"))
 
 	m := "latihango"
 	fmt.Println(len(m))

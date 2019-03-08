@@ -1,14 +1,14 @@
 package main
 
 import (
-	"strings"
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
+	"strings"
 )
 
-func main(){
+func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter text: ")
 	text, _ := reader.ReadString('\n')
