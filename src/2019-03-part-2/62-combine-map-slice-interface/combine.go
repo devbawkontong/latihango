@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func init() {
+	fmt.Println("initialization...")
+}
+
 func main() {
 	var person = []map[string]interface{}{
 		{"name": "Wick", "age": 23},
