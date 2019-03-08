@@ -31,7 +31,8 @@ func main() {
 	fmt.Println(t.Format("02-Jan-2006"))
 
 	//parsing date
-	var tgl string = "2018-10-16"
+	var tgl string
+	tgl = "2018-10-16"
 	taim, _ := time.Parse(layout, tgl)
 	p(taim)
 }
