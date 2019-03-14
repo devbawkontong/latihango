@@ -1,11 +1,11 @@
 package main
 
 import (
+	mm "2019-01/05-kondisi/latihan"
 	"fmt"
-	"2019-01/05-kondisi/latihan"
 )
 
-func main(){
+func main() {
 	var point = 9
 	if point == 10 {
 		fmt.Println("lulus dengan nilai sempurna")
@@ -19,5 +19,5 @@ func main(){
 
 	fmt.Println()
 
-	latihan.Show()
+	mm.Show()
 }
