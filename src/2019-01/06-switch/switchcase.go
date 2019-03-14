@@ -30,6 +30,8 @@ func main() {
 	}
 
 	fmt.Print("Go berjalan pada ")
+	//os := runtime.GOOS
+	//switch os {
 	switch os := runtime.GOOS; os {
 	case "darwin":
 		fmt.Println("OS X.")
@@ -43,6 +45,7 @@ func main() {
 
 	fmt.Print("Kapan hari Sabtu?")
 	today := time.Now().Weekday()
+	fmt.Println(today)
 	switch time.Saturday {
 	case today + 0:
 		fmt.Println("Sekarang.")
@@ -55,10 +58,11 @@ func main() {
 	}
 
 	t := time.Now()
+	fmt.Println(t.Hour())
 	switch {
-	case t.Hour() < 12:
+	case t.Hour() < 10:
 		fmt.Println("Selamat pagi!")
-	case t.Hour() < 17:
+	case t.Hour() < 18:
 		fmt.Println("Selamat sore.")
 	default:
 		fmt.Println("Selamat malam.")

@@ -10,7 +10,7 @@ func main() {
 
 	p := fmt.Println
 	/*
-		why referece to 2006-01-02??
+		why referrence to 2006-01-02??
 		It is just the numbers 1 2 3 4 5 6 7
 		1: month (January, Jan, 01, etc)
 		2: day
