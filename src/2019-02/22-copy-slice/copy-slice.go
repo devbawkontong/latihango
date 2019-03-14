@@ -18,4 +18,8 @@ func main() {
 	fmt.Println(dst)
 	fmt.Println(src)
 	fmt.Println(n)
+
+	//fungsi lain make
+	b := make([]int, 5, 5) // len(b)=0, cap(b)=5
+	fmt.Println(b)
 }

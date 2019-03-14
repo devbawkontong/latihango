@@ -16,4 +16,10 @@ func main() {
 	st2.nama = "harry"
 	fmt.Println("nama 1:", st1.nama)
 	fmt.Println("nama 2:", st2.nama)
+
+	g := student{"joker", 2}
+	fmt.Println(g.nama)
+	h := &g
+	h.grade = 1e6
+	fmt.Println(g)
 }
