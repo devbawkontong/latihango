@@ -3,15 +3,22 @@ package main
 import "fmt"
 
 func main() {
+	/*
+		utk variable bukan pointer :
+		   & = menunjukan alamat pointer
+		utk variable pointer :
+		   * = menunjukan tipe pointer
+	*/
+
 	var numA int
 	numA = 4
 	var numB *int
 	numB = &numA
 
 	fmt.Println("numA value :", numA)
-	fmt.Println("numA addr :", &numA)
+	fmt.Println("numA addr  :", &numA)
 	fmt.Println("numB value :", *numB)
-	fmt.Println("numB addr :", numB)
+	fmt.Println("numB addr  :", numB)
 
 	numA = 5
 	fmt.Println("numA value :", numA)
