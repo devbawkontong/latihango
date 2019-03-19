@@ -19,4 +19,5 @@ func main() {
 	//p1.age = 20
 	//p1.grade = 3
 	fmt.Println(e1.name)
+	fmt.Println(e1.person.name)
 }

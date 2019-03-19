@@ -4,11 +4,11 @@ import "fmt"
 
 type person struct {
 	name string
-	age  int
+	age  int //di struct student juga ada age
 }
 type student struct {
 	person
-	age   int
+	age   int //di struct person juga ada age
 	grade int
 }
 
