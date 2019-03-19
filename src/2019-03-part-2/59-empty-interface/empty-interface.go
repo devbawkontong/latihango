@@ -16,8 +16,8 @@ func main() {
 	fmt.Println(f, ok)
 
 	//langsung set nilai, akan keluar panic: interface conversion: interface {} is string, not float64
-	f = test.(float64)
-	fmt.Println(f)
+	//f = test.(float64)
+	//fmt.Println(f)
 
 	test = []string{"jeruk", "mangga", "pisang"}
 	fmt.Println(test)

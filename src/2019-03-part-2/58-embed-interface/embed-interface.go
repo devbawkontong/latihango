@@ -23,20 +23,20 @@ type kubus struct {
 	sisi float64
 }
 
-func (k kubus) volume() float64 {
+func (k *kubus) volume() float64 {
 	return math.Pow(k.sisi, 3)
 }
-func (k kubus) luas() float64 {
+func (k *kubus) luas() float64 {
 	return math.Pow(k.sisi, 2) * 6
 }
-func (k kubus) keliling() float64 {
+func (k *kubus) keliling() float64 {
 	return k.sisi * 12
 }
 
 func main() {
 	var cube hitung
-	cube = kubus{10}
-	fmt.Println("sisi:", cube.(kubus).sisi)
+	cube = &kubus{4}
+	//fmt.Println("sisi:", cube.(kubus).sisi) //tidak bisa karena kubus doesnt impl hitung
 	fmt.Println("luas:", cube.luas())
 	fmt.Println("keliling:", cube.keliling())
 	fmt.Println("volume:", cube.volume())
