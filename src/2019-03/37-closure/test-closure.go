@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/*
+Closure merupakan anonymous function atau fungsi tanpa nama. Biasa dimanfaatkan untuk membungkus suatu
+proses yang hanya dipakai sekali atau dipakai pada blok tertentu saja.
+*/
+
 func main() {
 	var getMinMax = func(n []int) (int, int) {
 		var min, max int
