@@ -14,4 +14,5 @@ func main() {
 	if reflexValue.Kind() == reflect.Int {
 		fmt.Println("nilai variabel :", reflexValue.Int())
 	}
+	fmt.Println(reflexValue.Interface())
 }
