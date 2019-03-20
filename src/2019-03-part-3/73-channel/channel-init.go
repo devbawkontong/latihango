@@ -20,11 +20,11 @@ func main() {
 	go sayHalo("thanos")
 
 	var pesan1 = <-pesan
-	fmt.Println(pesan1)
+	fmt.Println("dari 1:", pesan1)
 
 	var pesan2 = <-pesan
-	fmt.Println(pesan2)
+	fmt.Println("dari 2:", pesan2)
 
 	var pesan3 = <-pesan
-	fmt.Println(pesan3)
+	fmt.Println("dari 3:", pesan3)
 }
