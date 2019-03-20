@@ -36,8 +36,8 @@ func (k *kubus) keliling() float64 {
 func main() {
 	var cube hitung
 	cube = &kubus{4}
-	//fmt.Println("sisi:", cube.(kubus).sisi) //tidak bisa karena kubus doesnt impl hitung
 	fmt.Println("luas:", cube.luas())
 	fmt.Println("keliling:", cube.keliling())
 	fmt.Println("volume:", cube.volume())
+	fmt.Println("sisi:", cube.(*kubus).sisi) //harus pakai * karena kubus diawal adalah pointer
 }
