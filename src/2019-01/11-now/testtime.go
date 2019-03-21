@@ -36,6 +36,9 @@ func main() {
 	taim, _ := time.Parse(layout, tgl)
 	p(taim)
 
-	local, _ := time.LoadLocation("Asia/Jakarta")
-	fmt.Println(local)
+	t = time.Date(2009, time.November, 10, 23, 0, 0, 0, time.UTC)
+	fmt.Println(t)
+
+	jkt, _ := time.LoadLocation("Asia/Jakarta")
+	fmt.Println(time.Now().In(jkt))
 }
