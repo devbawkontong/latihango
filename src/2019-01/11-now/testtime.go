@@ -35,4 +35,7 @@ func main() {
 	tgl = "2018-10-16"
 	taim, _ := time.Parse(layout, tgl)
 	p(taim)
+
+	local, _ := time.LoadLocation("Asia/Jakarta")
+	fmt.Println(local)
 }
