@@ -1,4 +1,4 @@
-package main1111
+package main
 
 import "fmt"
 import "runtime"
