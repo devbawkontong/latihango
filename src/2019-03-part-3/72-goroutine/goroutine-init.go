@@ -10,7 +10,7 @@ func cetak(batas int, pesan string) {
 }
 
 func main() {
-	runtime.GOMAXPROCS(4)
+	runtime.GOMAXPROCS(3)
 
 	go cetak(5, "hola")
 	cetak(5, "halo")

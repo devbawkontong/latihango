@@ -1,10 +1,10 @@
-package main222
+package main
 
 import "fmt"
 import "runtime"
 
 func printMessage(what chan string) {
-	fmt.Println(<-what)
+	fmt.Println(":", <-what)
 }
 
 func main() {
